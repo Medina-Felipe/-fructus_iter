@@ -1,0 +1,96 @@
+<style>
+.persona-wrap { font-family: var(--font-sans); padding: 1.5rem 0; }
+.persona-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
+.persona-header { background: #185FA5; padding: 1.5rem; display: flex; gap: 1.25rem; align-items: center; }
+.avatar { width: 72px; height: 72px; border-radius: 50%; background: #85B7EB; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 500; color: #042C53; flex-shrink: 0; }
+.header-info { color: #E6F1FB; }
+.header-info h2 { margin: 0 0 2px; font-size: 20px; font-weight: 500; color: #fff; }
+.header-info .role { font-size: 13px; color: #B5D4F4; margin: 0 0 8px; }
+.meta-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.pill { background: rgba(255,255,255,0.15); border-radius: 20px; padding: 3px 10px; font-size: 12px; color: #E6F1FB; }
+.persona-body { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.section { padding: 1.25rem 1.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.section:nth-child(odd) { border-right: 0.5px solid var(--color-border-tertiary); }
+.section h3 { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #185FA5; margin: 0 0 10px; }
+.section p { font-size: 13px; color: var(--color-text-secondary); margin: 0; line-height: 1.6; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.tag { font-size: 12px; padding: 3px 10px; border-radius: 20px; }
+.tag-blue { background: #E6F1FB; color: #0C447C; }
+.tag-red { background: #FAECE7; color: #712B13; }
+.tag-amber { background: #FAEEDA; color: #633806; }
+.quote-box { background: #E6F1FB; border-left: 3px solid #185FA5; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; padding: 10px 14px; margin: 10px 0 0; }
+.quote-box p { font-size: 13px; color: #0C447C; font-style: italic; margin: 0; line-height: 1.6; }
+.full-row { grid-column: 1 / -1; border-right: none !important; }
+.bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+.bar-label { font-size: 12px; color: var(--color-text-secondary); width: 80px; flex-shrink: 0; }
+.bar-track { flex: 1; background: var(--color-background-secondary); border-radius: 4px; height: 6px; }
+.bar-fill { height: 6px; border-radius: 4px; background: #378ADD; }
+</style>
+<div class="persona-wrap">
+<div class="persona-card">
+  <div class="persona-header">
+    <img class="avatar" src="Marcela Vidal.png" alt="Marcela Vidal" style="object-fit: cover;">
+    <div class="header-info">
+      <h2>Marcela Vidal</h2>
+      <p class="role">Funcionaria administrativa — Universidad de La Frontera</p>
+      <div class="meta-pills">
+        <span class="pill">41 años</span>
+        <span class="pill">Temuco</span>
+        <span class="pill">Casada, 2 hijos</span>
+        <span class="pill">Título técnico universitario</span>
+      </div>
+    </div>
+  </div>
+  <div class="persona-body">
+    <div class="section">
+      <h3>Sobre Marcela</h3>
+      <p>Trabaja en la UFRO hace 12 años. Jornada completa con poco tiempo libre al mediodía. Cuida su alimentación y prefiere frutas y verduras frescas. Hace compras online habitualmente y tiene smartphone con múltiples apps instaladas.</p>
+    </div>
+    <div class="section">
+      <h3>Cita clave</h3>
+      <div class="quote-box">
+        <p>"Quiero comer sano durante la semana, pero no tengo tiempo de ir a la feria el sábado. Necesito saber qué hay disponible y que alguien me lo reserve."</p>
+      </div>
+    </div>
+    <div class="section">
+      <h3>Metas y necesidades</h3>
+      <ul class="tag-list">
+        <li class="tag tag-blue">Acceso a fruta fresca toda la semana</li>
+        <li class="tag tag-blue">Hacer pedido anticipado sin ir a la feria</li>
+        <li class="tag tag-blue">Conocer productores locales de confianza</li>
+        <li class="tag tag-blue">Coordinarse en pocos minutos</li>
+        <li class="tag tag-blue">Recibir o retirar en el campus</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Frustraciones</h3>
+      <ul class="tag-list">
+        <li class="tag tag-red">La feria cierra antes de salir del trabajo</li>
+        <li class="tag tag-red">Supermercado con fruta poco fresca</li>
+        <li class="tag tag-red">No sabe qué productores son confiables</li>
+        <li class="tag tag-red">Sin tiempo para buscar opciones</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Actividades cotidianas</h3>
+      <p>Entra a las 8:30, almuerza en el casino universitario. Retira a sus hijos a las 17:00. Hace compras online en el trayecto o en la noche. Los fines de semana recarga para la semana.</p>
+    </div>
+    <div class="section">
+      <h3>Uso de tecnología</h3>
+      <div class="bar-row"><span class="bar-label">Smartphone</span><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+      <div class="bar-row"><span class="bar-label">Apps de compra</span><div class="bar-track"><div class="bar-fill" style="width:75%"></div></div></div>
+      <div class="bar-row"><span class="bar-label">Redes sociales</span><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div></div>
+      <div class="bar-row"><span class="bar-label">Pagos digitales</span><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+    </div>
+    <div class="section full-row">
+      <h3>Motivaciones</h3>
+      <ul class="tag-list">
+        <li class="tag tag-amber">Alimentación saludable para su familia</li>
+        <li class="tag tag-amber">Apoyar productores locales</li>
+        <li class="tag tag-amber">Ahorrar tiempo en el día a día</li>
+        <li class="tag tag-amber">Conveniencia sin renunciar a calidad</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>

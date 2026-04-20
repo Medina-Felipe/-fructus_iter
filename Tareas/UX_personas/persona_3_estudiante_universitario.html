@@ -1,0 +1,97 @@
+<style>
+.persona-wrap { font-family: var(--font-sans); padding: 1.5rem 0; }
+.persona-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
+.persona-header { background: #854F0B; padding: 1.5rem; display: flex; gap: 1.25rem; align-items: center; }
+.avatar { width: 72px; height: 72px; border-radius: 50%; background: #FAC775; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 500; color: #412402; flex-shrink: 0; }
+.header-info { color: #FAEEDA; }
+.header-info h2 { margin: 0 0 2px; font-size: 20px; font-weight: 500; color: #fff; }
+.header-info .role { font-size: 13px; color: #FAC775; margin: 0 0 8px; }
+.meta-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.pill { background: rgba(255,255,255,0.15); border-radius: 20px; padding: 3px 10px; font-size: 12px; color: #FAEEDA; }
+.persona-body { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.section { padding: 1.25rem 1.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.section:nth-child(odd) { border-right: 0.5px solid var(--color-border-tertiary); }
+.section h3 { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: #854F0B; margin: 0 0 10px; }
+.section p { font-size: 13px; color: var(--color-text-secondary); margin: 0; line-height: 1.6; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.tag { font-size: 12px; padding: 3px 10px; border-radius: 20px; }
+.tag-amber { background: #FAEEDA; color: #633806; }
+.tag-red { background: #FAECE7; color: #712B13; }
+.tag-green { background: #EAF3DE; color: #27500A; }
+.quote-box { background: #FAEEDA; border-left: 3px solid #854F0B; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; padding: 10px 14px; margin: 10px 0 0; }
+.quote-box p { font-size: 13px; color: #633806; font-style: italic; margin: 0; line-height: 1.6; }
+.full-row { grid-column: 1 / -1; border-right: none !important; }
+.bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+.bar-label { font-size: 12px; color: var(--color-text-secondary); width: 80px; flex-shrink: 0; }
+.bar-track { flex: 1; background: var(--color-background-secondary); border-radius: 4px; height: 6px; }
+.bar-fill { height: 6px; border-radius: 4px; background: #BA7517; }
+</style>
+<div class="persona-wrap">
+<div class="persona-card">
+  <div class="persona-header">
+    <img class="avatar" src="Diego Painevil.jpg" alt="Diego Painevil" style="object-fit: cover;">
+    <div class="header-info">
+      <h2>Diego Painevil</h2>
+      <p class="role">Estudiante de Ingeniería — Universidad de La Frontera</p>
+      <div class="meta-pills">
+        <span class="pill">21 años</span>
+        <span class="pill">Temuco (arriendo)</span>
+        <span class="pill">Soltero</span>
+        <span class="pill">Vive con compañeros de pieza</span>
+      </div>
+    </div>
+  </div>
+  <div class="persona-body">
+    <div class="section">
+      <h3>Sobre Diego</h3>
+      <p>Estudiante de tercer año. Recibe una beca de manutención y administra un presupuesto ajustado. Cocina en su arriendo para ahorrar. Le interesa comer saludable pero desconoce dónde comprar verduras frescas y baratas cerca del campus.</p>
+    </div>
+    <div class="section">
+      <h3>Cita clave</h3>
+      <div class="quote-box">
+        <p>"Compro en el supermercado porque no sé qué hay en la feria ni cuánto cuesta. Si pudiera ver los productos con precios antes de ir, iría seguido."</p>
+      </div>
+    </div>
+    <div class="section">
+      <h3>Metas y necesidades</h3>
+      <ul class="tag-list">
+        <li class="tag tag-amber">Ver qué productos hay disponibles</li>
+        <li class="tag tag-amber">Comparar precios antes de salir</li>
+        <li class="tag tag-amber">Comprar verduras a precio justo</li>
+        <li class="tag tag-amber">Llegar a la feria con info clara</li>
+        <li class="tag tag-amber">Conocer productores del barrio</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Frustraciones</h3>
+      <ul class="tag-list">
+        <li class="tag tag-red">No sabe qué venden en la feria</li>
+        <li class="tag tag-red">Llega tarde y ya no hay stock</li>
+        <li class="tag tag-red">Precios poco claros o variables</li>
+        <li class="tag tag-red">Supermercado más caro y menos fresco</li>
+        <li class="tag tag-red">No puede planificar su compra semanal</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h3>Actividades cotidianas</h3>
+      <p>Clases de lunes a viernes, algunas tardes libres. Cocina con compañeros algunos días. Revisa Instagram y TikTok en ratos libres. Hace compras a última hora o por impulso.</p>
+    </div>
+    <div class="section">
+      <h3>Uso de tecnología</h3>
+      <div class="bar-row"><span class="bar-label">Smartphone</span><div class="bar-track"><div class="bar-fill" style="width:95%"></div></div></div>
+      <div class="bar-row"><span class="bar-label">Redes sociales</span><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div>
+      <div class="bar-row"><span class="bar-label">Apps de pago</span><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div></div>
+      <div class="bar-row"><span class="bar-label">Apps de compra</span><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div></div>
+    </div>
+    <div class="section full-row">
+      <h3>Motivaciones</h3>
+      <ul class="tag-list">
+        <li class="tag tag-green">Estirar el presupuesto mensual</li>
+        <li class="tag tag-green">Comer mejor sin gastar más</li>
+        <li class="tag tag-green">Apoyar lo local sin complicarse</li>
+        <li class="tag tag-green">Planificar la semana con anticipación</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
