@@ -1,4 +1,4 @@
-# 🌿 Fructus Iter
+# 🌿 Fructus Iter - Resume and Context
 
 > Digital marketplace platform connecting local producers, farmers, and artisans from La Araucanía, Chile, with buyers at weekly fairs and local markets.
 
