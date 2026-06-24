@@ -295,7 +295,7 @@ The design evolved through multiple iterations guided by usability feedback rece
 
 ### 7.2. Heuristic Evaluation
 
-A heuristic evaluation was conducted on the high-fidelity Fructus Iter prototype using Nielsen's 10 usability heuristics as the evaluation framework. The findings directly informed the interface corrections documented in section 7.1.
+A heuristic evaluation was conducted by our classmates on the high-fidelity Fructus Iter prototype using Nielsen's 10 usability heuristics as the evaluation framework. The findings directly informed the interface corrections documented in section 7.1.
 
 📄 [Heuristic Evaluation (PDF)](Avance_2/Heuristic%20Evaluation/Heuristic_Evaluation.pdf)
 
