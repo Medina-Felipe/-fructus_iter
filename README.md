@@ -178,10 +178,11 @@ Based on the benchmark analysis and the three UX personas, the following functio
 | 4 | Campus pick-up flow | Marcela / Diego | ERIC Matrix — Include |
 | 5 | Product catalog with search and filters | Diego Painevil | Domain standard (all competitors) |
 | 6 | Cart, checkout and order confirmation | Marcela Vidal | Domain standard (all competitors) |
-| 7 | Order tracking / pickup status | All personas | Benchmark reference — Uber Eats |
-| 8 | Favorites (stores and products) | Marcela Vidal | Domain standard (all competitors) |
-| 9 | User profile and settings | All personas | Domain standard (all competitors) |
-| 10 | Direct seller contact (chat / WhatsApp) | Juan Catrileo | ERIC Matrix — Include |
+| 7 | Home delivery option | Marcela Vidal | Added in Avance 2 based on user feedback |
+| 8 | Order tracking / pickup status | All personas | Benchmark reference — Uber Eats |
+| 9 | Favorites (stores and products) | Marcela Vidal | Domain standard (all competitors) |
+| 10 | User profile and settings | All personas | Domain standard (all competitors) |
+| 11 | Direct seller contact (chat / WhatsApp) | Juan Catrileo | ERIC Matrix — Include |
 
 ---
 
@@ -192,10 +193,10 @@ The following functionalities were identified in competitors but **consciously e
 | Excluded Feature | Reason | Competitor that has it |
 |---|---|---|
 | Mystery bags / blind buying | Destroys producer identity — core to our value proposition | GoodMeal, Cheaf |
-| Real-time GPS delivery tracking | Fructus Iter uses in-person pick-up, no courier needed | Uber Eats |
 | Restaurant-style vendor dashboard | Too complex for producers with low digital literacy | Uber Eats |
 | Subscription or membership model | Creates financial barriers for small producers | GoodMeal |
 | Algorithmic feed / sponsored listings | Introduces hidden fees and anonymity in the supply chain | Uber Eats |
+| QR code at pick-up | Creates a barrier for older users with low digital literacy — replaced by numeric order code | — |
 
 ---
 
@@ -287,7 +288,7 @@ The design evolved through multiple iterations guided by usability feedback rece
 | **Sign In** | No way to switch to Register | Added "Don't have an account? Register" link |
 | **Register** | No way to switch to Sign In | Added "Already have an account? Sign In" link |
 
-📄 [Interface Evolution — UX Refactoring (Avance 2)](Avance_2/Interface_Evolution/UX_Refactoring.pdf)
+📄 [Interface Evolution — UX Refactoring (Avance 2)](Avance_2/Interface_Evolution/Interface_Evolution.pdf)
 
 ---
 
@@ -301,7 +302,18 @@ A heuristic evaluation was conducted on the high-fidelity Fructus Iter prototype
 
 ### 7.3. Accessibility
 
-Accessibility analysis conducted as part of the Avance 2 requirements, reviewing the platform against established accessibility standards covered in the course workshops.
+Accessibility was a core design consideration for Fructus Iter given that one of our primary user personas — Juan Catrileo, 52 years old, with basic primary education — represents a segment of users with limited digital literacy. The following accessibility decisions were made during the design process:
+
+| Design Decision | Accessibility Rationale |
+|---|---|
+| **Numeric order code instead of QR** | QR codes require users to understand how to scan them. Older producers and buyers are more familiar with numeric codes, reducing the learning curve and potential errors at pick-up. |
+| **Large touch targets (min. 48×48px)** | Ensures that users with reduced motor precision — common in older adults — can tap buttons and controls without errors. |
+| **High contrast green system** (`#2E7D32` on white) | Meets WCAG AA contrast ratio requirements, supporting users with low vision or color perception difficulties. |
+| **Visual-first product cards with large images** | Reduces dependence on reading ability for users with lower literacy levels, letting them identify products visually. |
+| **Simple bottom navigation with labels** | Icon-only navigation is a known accessibility barrier. All 5 nav items include text labels below the icon. |
+| **+/- quantity selectors instead of text input** | Eliminates the need to type numbers, which is a common difficulty for older or less tech-savvy users. |
+| **Delivery and pick-up options clearly separated** | Users with cognitive or attention difficulties benefit from explicit, non-ambiguous checkout flows with one clear decision per step. |
+| **Spanish-only interface** | All UI text is in Spanish to match the native language of all target users in La Araucanía, reducing cognitive load. |
 
 📄 [Accessibility Analysis (PDF)](Avance_2/Accessibility/Accessibility%20in%20Discord.pdf)
 
@@ -319,8 +331,8 @@ High-fidelity screens for all functionalities designed in Figma, following the a
 - Onboarding (Sign Up / Sign In)
 - Home with category grid and featured products
 - Product catalog and detail view
-- Cart, checkout (home delivery & pick-up), and order confirmation
-- Order tracking and campus pick-up flow
+- Cart, checkout with two options (home delivery & campus pick-up), and order confirmation
+- Order tracking for both delivery and pick-up flows
 - Favorites (stores and products)
 - Profile, payment methods, and settings
 
@@ -364,9 +376,9 @@ Central repository of all project deliverables, organized by UX design plane.
 
 | Deliverable | File | Description |
 |---|---|---|
-| Interface Evolution | [PDF](Avance_2/Interface_Evolution/UX_Refactoring.pdf) | Before/after corrections from Avance 1 feedback |
+| Interface Evolution | [PDF](Avance_2/Interface_Evolution/Interface_Evolution.pdf) | Before/after corrections from Avance 1 feedback |
 | Heuristic Evaluation | [PDF](Avance_2/Heuristic%20Evaluation/Heuristic_Evaluation.pdf) | Nielsen's 10 heuristics applied to the HD prototype |
-| Accessibility Analysis | [PDF](Avance_2/Accessibility/Accessibility%20in%20Discord.pdf) | Accessibility review per course workshop guidelines |
+| Accessibility Analysis | [PDF](Avance_2/Accessibility/Accessibility%20in%20Discord.pdf) | Accessibility decisions applied to Fructus Iter (numeric codes, large targets, contrast, etc.) |
 | Figma Prototype (HD) | [Open in Figma](https://www.figma.com/design/aAvGQ0lL6xu3XAz2v8vcvm/Fructus-Iter?node-id=329-3128&p=f&t=W8TL7ZePVDXgkSBs-0) | Navigable high-definition prototype |
 
 ---
