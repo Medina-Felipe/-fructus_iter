@@ -178,7 +178,7 @@ Based on the benchmark analysis and the three UX personas, the following functio
 | 4 | Campus pick-up flow | Marcela / Diego | ERIC Matrix — Include |
 | 5 | Product catalog with search and filters | Diego Painevil | Domain standard (all competitors) |
 | 6 | Cart, checkout and order confirmation | Marcela Vidal | Domain standard (all competitors) |
-| 7 | Home delivery option | Marcela Vidal | Added in Avance 2 based on user feedback |
+| 7 | Delivery option | Marcela Vidal | Added based on user feedback |
 | 8 | Order tracking / pickup status | All personas | Benchmark reference — Uber Eats |
 | 9 | Favorites (stores and products) | Marcela Vidal | Domain standard (all competitors) |
 | 10 | User profile and settings | All personas | Domain standard (all competitors) |
