@@ -65,6 +65,7 @@ Local producers from La Araucanía — horticulturists, Mapuche artisans, and be
 - Browse local producers and their weekly offerings from the app
 - Pre-order products and reserve stock before arriving at the fair
 - Campus pick-up flow for UFRO staff and students
+- Delivery options for costumers
 - Transparent pricing with no hidden fees or intermediaries
 
 ---
