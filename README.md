@@ -2,32 +2,36 @@
 
 > A mobile-first digital marketplace connecting local producers, farmers, and artisans from La Araucanía, Chile, with buyers at weekly fairs and local markets.
 
-**Course:** Diseño de Experiencia de Usuario e Interacción Humano Computador — UXD-HCI 2026
-**Department:** Departamento de Cs. Computación e Informática
+**Course:** Diseño de Experiencia de Usuario e Interacción Humano Computador — UXD-HCI 2026  
+**Department:** Departamento de Cs. Computación e Informática  
 **University:** Universidad de La Frontera (UFRO), Temuco, Chile
 
 ---
 
 ## Index
 
-1. [**Introduction**](#1-introduction)
+1. [Introduction](#1-introduction)
    - [1.1. The Problem](#11-the-problem)
    - [1.2. Our Solution](#12-our-solution)
-2. [**Team & Roles**](#2-team--roles)
-3. [**Strategy**](#3-strategy)
+2. [Team & Roles](#2-team--roles)
+3. [Strategy](#3-strategy)
    - [3.1. Value Proposition Canvas](#31-value-proposition-canvas)
    - [3.2. UX Personas](#32-ux-personas)
    - [3.3. Benchmark Analysis](#33-benchmark-analysis)
-4. [**Structure**](#4-structure)
-   - [4.1. Navigation Flow](#41-navigation-flow)
-5. [**Skeleton**](#5-skeleton)
-   - [5.1. Low-Fi Wireframes](#51-low-fi-wireframes)
-6. [**Surface**](#6-surface)
-   - [6.1. Interface Evolution](#61-interface-evolution)
-   - [6.2. Heuristic Evaluation](#62-heuristic-evaluation)
-   - [6.3. Accessibility](#63-accessibility)
-   - [6.4. High Definition Interfaces](#64-high-definition-interfaces)
-7. [**Annex**](#7-annex)
+4. [Scope](#4-scope)
+   - [4.1. Functional Requirements](#41-functional-requirements)
+   - [4.2. Restrictions](#42-restrictions)
+   - [4.3. Navigation Patterns](#43-navigation-patterns-adopted-from-benchmark)
+5. [Structure](#5-structure)
+   - [5.1. Navigation Flow](#51-navigation-flow)
+6. [Skeleton](#6-skeleton)
+   - [6.1. Low-Fi Wireframes](#61-low-fi-wireframes)
+7. [Surface](#7-surface)
+   - [7.1. Interface Evolution](#71-interface-evolution)
+   - [7.2. Heuristic Evaluation](#72-heuristic-evaluation)
+   - [7.3. Accessibility](#73-accessibility)
+   - [7.4. High Definition Interfaces](#74-high-definition-interfaces)
+8. [Annex](#8-annex)
 
 ---
 
@@ -52,26 +56,16 @@ Local producers from La Araucanía — horticulturists, Mapuche artisans, and be
 
 **Fructus Iter** is a mobile-first marketplace that bridges the gap between local fair producers and buyers. It enables producers to publish their weekly stock, receive pre-orders, and build a loyal digital customer base — while giving buyers transparent access to fresh, locally sourced products before fair day.
 
-#### 🌱 Producer Features
+**🌱 Producer Features**
 - Publish weekly stock with photos, prices, and availability before fair day
 - Receive and manage pre-orders from regular customers
 - Build a loyal digital customer base with direct contact tools
 
-#### 🛒 Buyer Features
+**🛒 Buyer Features**
 - Browse local producers and their weekly offerings from the app
 - Pre-order products and reserve stock before arriving at the fair
 - Campus pick-up flow for UFRO staff and students
 - Transparent pricing with no hidden fees or intermediaries
-
-#### 🗺️ UX Elements Mapping (Jesse James Garrett)
-
-| UX Plane | Deliverable |
-|---|---|
-| **Strategy** | Problem statement, Value Proposition Canvas, UX Personas |
-| **Scope** | Benchmark analysis, Opportunity Matrix (ERIC) |
-| **Structure** | Navigation flow diagram |
-| **Skeleton** | Low-Fi wireframes |
-| **Surface** | HD interfaces, Interface evolution, Heuristic evaluation |
 
 ---
 
@@ -85,6 +79,8 @@ Local producers from La Araucanía — horticulturists, Mapuche artisans, and be
 ---
 
 ## 3. Strategy
+
+> *The Strategy plane defines why the product exists: what the users need and what the business/project wants to achieve.*
 
 ### 3.1. Value Proposition Canvas
 
@@ -102,9 +98,8 @@ The Value Proposition Canvas maps the alignment between producer and buyer pain 
 - Buyers unaware of available stock until physical arrival
 - Supermarket alternatives are more expensive and less fresh
 
-📄 [Value Proposition Canvas — Fructus Iter (English)](Tareas/Value%20Proposition%20Canvas/Value%20Proposition%20Canvas%20(English%20Version).pdf)
-
-📄 [Value Proposition Canvas — Fructus Iter (Spanish)](Tareas/Value%20Proposition%20Canvas/Value%20Proposition%20Canvas.pdf)
+📄 [Value Proposition Canvas — English Version](Tareas/Value%20Proposition%20Canvas/Value%20Proposition%20Canvas%20(English%20Version).pdf)  
+📄 [Value Proposition Canvas — Spanish Version](Tareas/Value%20Proposition%20Canvas/Value%20Proposition%20Canvas.pdf)
 
 ---
 
@@ -133,8 +128,6 @@ Three personas were identified based on field context and the user story provide
 - **Key need:** Know what's available and compare prices before leaving campus
 - **Main frustration:** Doesn't know what's being sold, arrives late and stock is gone
 
-📄 [UX Personas — Fructus Iter (English)](Tareas/UX_personas/JuanCatrileo(EnglishVersion).png)
-
 ![Juan Catrileo](Tareas/UX_personas/JuanCatrileo(EnglishVersion).png)
 ![Marcela Vidal](Tareas/UX_personas/MarcelaVidal(EnglishVersion).png)
 ![Diego Painevil](Tareas/UX_personas/DiegoPainevil(EnglishVersion).png)
@@ -150,9 +143,9 @@ Competitive analysis conducted following the two-phase methodology: **Explorator
 | # | Tool | Category | Justification |
 |---|---|---|---|
 | 1 | **Lomi** | Direct Competitor | Chilean marketplace connecting local producers with buyers directly. Same problem, same cultural and market context. |
-| 2 | **GoodMeal** | Analogous Competitor | Chilean food rescue app with 1M+ users. Handles fresh food surplus but uses mystery bags — fundamentally different UX logic from Fructus Iter. |
-| 3 | **Cheaf** | Analogous Competitor | Chilean surplus food app with 1.5M users. Works with fruits, vegetables, and dairy via a pick-up model. Similar domain, different problem framing. |
-| 4 | **Uber Eats** | Design Reference | Sets the UX standard for food delivery catalogs, ordering flows, and order tracking at scale. Used as visual and interaction reference. |
+| 2 | **GoodMeal** | Analogous Competitor | Chilean food rescue app with 1M+ users. Handles fresh food surplus but uses mystery bags — fundamentally different UX logic. |
+| 3 | **Cheaf** | Analogous Competitor | Chilean surplus food app with 1.5M users. Works with fruits, vegetables, and dairy via a pick-up model. |
+| 4 | **Uber Eats** | Design Reference | Sets the UX standard for food delivery catalogs, ordering flows, and order tracking at scale. |
 
 #### Opportunity Matrix (ERIC Framework)
 
@@ -169,9 +162,60 @@ Competitive analysis conducted following the two-phase methodology: **Explorator
 
 ---
 
-## 4. Structure
+## 4. Scope
 
-### 4.1. Navigation Flow
+> *The Scope plane defines what the product does and does not do: which features are in, which are out, and why.*
+
+### 4.1. Functional Requirements
+
+Based on the benchmark analysis and the three UX personas, the following functionalities were defined as core scope:
+
+| # | Functionality | Persona | Source |
+|---|---|---|---|
+| 1 | Weekly stock publishing by producer | Juan Catrileo | Benchmark gap — no competitor solves this |
+| 2 | Pre-order before fair day | Marcela Vidal | Value Proposition Canvas |
+| 3 | Producer identity visible on every listing | All personas | ERIC Matrix — Increase |
+| 4 | Campus pick-up flow | Marcela / Diego | ERIC Matrix — Include |
+| 5 | Product catalog with search and filters | Diego Painevil | Domain standard (all competitors) |
+| 6 | Cart, checkout and order confirmation | Marcela Vidal | Domain standard (all competitors) |
+| 7 | Order tracking / pickup status | All personas | Benchmark reference — Uber Eats |
+| 8 | Favorites (stores and products) | Marcela Vidal | Domain standard (all competitors) |
+| 9 | User profile and settings | All personas | Domain standard (all competitors) |
+| 10 | Direct seller contact (chat / WhatsApp) | Juan Catrileo | ERIC Matrix — Include |
+
+---
+
+### 4.2. Restrictions
+
+The following functionalities were identified in competitors but **consciously excluded** from Fructus Iter's scope:
+
+| Excluded Feature | Reason | Competitor that has it |
+|---|---|---|
+| Mystery bags / blind buying | Destroys producer identity — core to our value proposition | GoodMeal, Cheaf |
+| Real-time GPS delivery tracking | Fructus Iter uses in-person pick-up, no courier needed | Uber Eats |
+| Restaurant-style vendor dashboard | Too complex for producers with low digital literacy | Uber Eats |
+| Subscription or membership model | Creates financial barriers for small producers | GoodMeal |
+| Algorithmic feed / sponsored listings | Introduces hidden fees and anonymity in the supply chain | Uber Eats |
+
+---
+
+### 4.3. Navigation Patterns Adopted from Benchmark
+
+| Pattern | Adopted from | Decision |
+|---|---|---|
+| Bottom navigation bar (5 tabs) | Uber Eats / Lomi | ✅ Adopted — industry standard, users arrive with this expectation |
+| Product card with image + price + producer | Lomi | ✅ Adopted — reinforces producer identity |
+| Quantity selector +/- on product detail | Uber Eats | ✅ Adopted — reduces text input overhead |
+| Step-by-step order status (Accepted → Packed → Delivered) | Uber Eats | ✅ Adopted — clear progress feedback |
+| Mystery bag / surprise purchase flow | GoodMeal / Cheaf | ❌ Rejected — users must know exactly what they are buying |
+
+---
+
+## 5. Structure
+
+> *The Structure plane defines how the product is organized: how screens connect and how users move through the app.*
+
+### 5.1. Navigation Flow
 
 The navigation diagram covers all app functionalities across both user roles (producer and buyer), from onboarding through to order tracking and profile management.
 
@@ -200,15 +244,15 @@ Landing Page
 
 ---
 
-## 5. Skeleton
+## 6. Skeleton
 
-### 5.1. Low-Fi Wireframes
+> *The Skeleton plane defines the arrangement of interface elements: where components are placed on screen and how they support the user's tasks.*
 
-Initial paper wireframes covering all core user flows, digitized and organized by functional group. The wireframes represent the first iteration of the interface before any visual design decisions were made.
+### 6.1. Low-Fi Wireframes
 
-**Flows covered:**
+Initial paper wireframes covering all core user flows, digitized and organized by functional group. The wireframes represent the first design iteration before any visual decisions were made.
 
-| Flow | Screens |
+| Flow | Screens covered |
 |---|---|
 | Onboarding | Sign In · Register |
 | Home & Browse | Home · Search · Categories |
@@ -218,102 +262,115 @@ Initial paper wireframes covering all core user flows, digitized and organized b
 | Favorites | Add to favorites · My favorites |
 | Profile | My profile · Edit profile · Settings |
 
-📄 [Low-Fi Wireframes — Fructus Iter (PDF)](Avance_1/Wireframes_Avance1/Wireframe_avance1.pdf)
+📄 [Low-Fi Wireframes — Avance 1 (PDF)](Avance_1/Wireframes_Avance1/Wireframe_avance1.pdf)
 
 ---
 
-## 6. Surface
+## 7. Surface
 
-### 6.1. Interface Evolution
+> *The Surface plane defines the visual design of the product: colors, typography, icons, images, and the final look and feel of every screen.*
 
-The design evolved from paper wireframes to high-fidelity interfaces through multiple iterations guided by usability principles and feedback from Avance 1.
+### 7.1. Interface Evolution
 
-Key design decisions made during the evolution process:
+The design evolved through multiple iterations guided by usability feedback received during Avance 1. Below is a summary of the corrections applied to each screen.
 
-- **Green color system** (`#2E7D32`, `#4CAF50`, `#F1F8F0`) chosen to reinforce the organic, local, and trustworthy nature of the platform
-- **Visual-first product cards** with large images to reduce cognitive load for producers less familiar with digital interfaces
-- **Bottom navigation bar** with 5 fixed sections (Home, Search, Orders, Favorites, Profile) following established mobile marketplace conventions identified in the benchmark
-- **Producer identity visible on every listing** — name, location, and story — directly addressing the key differentiator identified in the ERIC matrix
+| Screen | Feedback Received | Correction Applied |
+|---|---|---|
+| **Product Detail** | Add status bar, unit switcher (kg/g), navbar, justify text | Added status bar, unit selector, navbar, justified text |
+| **Cart** | Review possibility of changing delivery address | Moved delivery data to the next view (checkout) |
+| **Checkout** | Separate delivery options | Added two flows: home delivery and pick-up in store |
+| **Order Tracking** | Maintain coherence, reduce redundancy | Simplified tracking screen, removed redundant elements |
+| **Profile** | Add payment methods, fix padding | Added payment methods section and corrected padding |
+| **Heart Icons** | Hearts too large for the circle, repeated across screens | Resized heart icons consistently across all screens |
+| **Favorites** | Back arrow made no sense, missing navbar | Removed arrow, added navbar for navigation |
+| **Home** | Border trace inconsistency, missing back arrow logic | Removed erroneous border, removed back arrow |
+| **Sign In** | No way to switch to Register | Added "Don't have an account? Register" link |
+| **Register** | No way to switch to Sign In | Added "Already have an account? Sign In" link |
 
-*Interface evolution document with annotated before/after comparisons — coming in Avance 2.*
-
----
-
-### 6.2. Heuristic Evaluation
-
-A heuristic evaluation was conducted on the high-fidelity Fructus Iter prototype using Nielsen's 10 usability heuristics as the evaluation framework.
-
-📄 [Heuristic Evaluation — Fructus Iter (PDF)](Avance_2/Heuristic%20Evaluation/Heuristic_Evaluation.pdf)
-
----
-
-### 6.3. Accessibility
-
-Accessibility analysis conducted as part of the Avance 2 requirements, reviewing the platform against established accessibility standards.
-
-📄 [Accessibility Analysis — Fructus Iter (PDF)](Avance_2/Accessibility/Accessibility%20in%20Discord.pdf)
+📄 [Interface Evolution — UX Refactoring (Avance 2)](Avance_2/Interface_Evolution/UX_Refactoring.pdf)
 
 ---
 
-### 6.4. High Definition Interfaces
+### 7.2. Heuristic Evaluation
+
+A heuristic evaluation was conducted on the high-fidelity Fructus Iter prototype using Nielsen's 10 usability heuristics as the evaluation framework. The findings directly informed the interface corrections documented in section 7.1.
+
+📄 [Heuristic Evaluation (PDF)](Avance_2/Heuristic%20Evaluation/Heuristic_Evaluation.pdf)
+
+---
+
+### 7.3. Accessibility
+
+Accessibility analysis conducted as part of the Avance 2 requirements, reviewing the platform against established accessibility standards covered in the course workshops.
+
+📄 [Accessibility Analysis (PDF)](Avance_2/Accessibility/Accessibility%20in%20Discord.pdf)
+
+---
+
+### 7.4. High Definition Interfaces
 
 High-fidelity screens for all functionalities designed in Figma, following the app's green color system and accessible UI patterns informed by the benchmark and heuristic evaluation.
+
+**Design system:**
+- Primary green: `#2E7D32` · Medium green: `#4CAF50` · Background: `#F1F8F0`
+- Typography: Inter / SF Pro · Rounded corners: 16–24px · Subtle card shadows
 
 **Key screens:**
 - Onboarding (Sign Up / Sign In)
 - Home with category grid and featured products
 - Product catalog and detail view
-- Cart, checkout, and order confirmation
+- Cart, checkout (home delivery & pick-up), and order confirmation
 - Order tracking and campus pick-up flow
 - Favorites (stores and products)
-- Profile and settings
+- Profile, payment methods, and settings
 
 🔗 [Figma Prototype — Fructus Iter](https://www.figma.com/design/aAvGQ0lL6xu3XAz2v8vcvm/Fructus-Iter?node-id=329-3128&p=f&t=W8TL7ZePVDXgkSBs-0)
 
 ---
 
-## 7. Annex
+## 8. Annex
 
-Central repository of all project deliverables, organized by UX design phase.
+Central repository of all project deliverables, organized by UX design plane.
 
-### Strategy Documents
+### 📐 Strategy
 
-- 📄 [Value Proposition Canvas (English)](Tareas/Value%20Proposition%20Canvas/Value%20Proposition%20Canvas%20(English%20Version).pdf)
-  > Alignment between producer and buyer needs and the platform's proposed value.
+| Deliverable | File | Description |
+|---|---|---|
+| Value Proposition Canvas (EN) | [PDF](Tareas/Value%20Proposition%20Canvas/Value%20Proposition%20Canvas%20(English%20Version).pdf) | Alignment between user needs and platform value |
+| Value Proposition Canvas (ES) | [PDF](Tareas/Value%20Proposition%20Canvas/Value%20Proposition%20Canvas.pdf) | Spanish version |
+| UX Persona — Juan Catrileo | [PNG](Tareas/UX_personas/JuanCatrileo(EnglishVersion).png) | Producer persona |
+| UX Persona — Marcela Vidal | [PNG](Tareas/UX_personas/MarcelaVidal(EnglishVersion).png) | Buyer persona (UFRO staff) |
+| UX Persona — Diego Painevil | [PNG](Tareas/UX_personas/DiegoPainevil(EnglishVersion).png) | Buyer persona (student) |
 
-- 📄 [Value Proposition Canvas (Spanish)](Tareas/Value%20Proposition%20Canvas/Value%20Proposition%20Canvas.pdf)
+### 🎯 Scope
 
-- 🖼️ [UX Persona — Juan Catrileo (English)](Tareas/UX_personas/JuanCatrileo(EnglishVersion).png)
+| Deliverable | File | Description |
+|---|---|---|
+| Benchmark Opportunity Matrix | [PNG](Tareas/Benchmark/Benchmark_Map.png) | ERIC framework comparing Lomi, GoodMeal, Cheaf, Uber Eats |
 
-- 🖼️ [UX Persona — Marcela Vidal (English)](Tareas/UX_personas/MarcelaVidal(EnglishVersion).png)
+### 🗺️ Structure
 
-- 🖼️ [UX Persona — Diego Painevil (English)](Tareas/UX_personas/DiegoPainevil(EnglishVersion).png)
+| Deliverable | File | Description |
+|---|---|---|
+| Navigation Flow Diagram | [PNG](Tareas/Diagrama_navegacion/Diagrama_navegacion.png) | Complete navigation architecture |
 
-- 🖼️ [Benchmark Opportunity Matrix](Tareas/Benchmark/Benchmark_Map.png)
-  > ERIC framework opportunity matrix comparing Lomi, GoodMeal, Cheaf, and Uber Eats.
+### 📐 Skeleton
 
-### Structure Documents
+| Deliverable | File | Description |
+|---|---|---|
+| Low-Fi Wireframes — Avance 1 | [PDF](Avance_1/Wireframes_Avance1/Wireframe_avance1.pdf) | Full wireframe set organized by user flow |
 
-- 🖼️ [Navigation Flow Diagram](Tareas/Diagrama_navegacion/Diagrama_navegacion.png)
-  > Complete navigation architecture covering all app functionalities.
+### 🎨 Surface
 
-### Skeleton Documents
-
-- 📄 [Low-Fi Wireframes — Avance 1](Avance_1/Wireframes_Avance1/Wireframe_avance1.pdf)
-  > Full set of paper wireframes digitized and organized by user flow.
-
-### Surface Documents
-
-- 📄 [Heuristic Evaluation](Avance_2/Heuristic%20Evaluation/Heuristic_Evaluation.pdf)
-  > Usability evaluation of the HD prototype using Nielsen's 10 heuristics.
-
-- 📄 [Accessibility Analysis](Avance_2/Accessibility/Accessibility%20in%20Discord.pdf)
-  > Accessibility review of the platform based on course workshop guidelines.
-
-- 🔗 [Figma Prototype (HD)](https://www.figma.com/design/aAvGQ0lL6xu3XAz2v8vcvm/Fructus-Iter?node-id=329-3128&p=f&t=W8TL7ZePVDXgkSBs-0)
+| Deliverable | File | Description |
+|---|---|---|
+| Interface Evolution | [PDF](Avance_2/Interface_Evolution/UX_Refactoring.pdf) | Before/after corrections from Avance 1 feedback |
+| Heuristic Evaluation | [PDF](Avance_2/Heuristic%20Evaluation/Heuristic_Evaluation.pdf) | Nielsen's 10 heuristics applied to the HD prototype |
+| Accessibility Analysis | [PDF](Avance_2/Accessibility/Accessibility%20in%20Discord.pdf) | Accessibility review per course workshop guidelines |
+| Figma Prototype (HD) | [Open in Figma](https://www.figma.com/design/aAvGQ0lL6xu3XAz2v8vcvm/Fructus-Iter?node-id=329-3128&p=f&t=W8TL7ZePVDXgkSBs-0) | Navigable high-definition prototype |
 
 ---
 
-> **UXD-HCI 2026 · Universidad de La Frontera · Temuco, Chile**
-> *All repository documentation is written in English as per course requirements.*
+> **UXD-HCI 2026 · Universidad de La Frontera · Temuco, Chile**  
+> *All repository documentation is written in English as per course requirements.*  
 > *Application interfaces are in Spanish as per course requirements.*
